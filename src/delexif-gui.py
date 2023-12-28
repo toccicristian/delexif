@@ -24,7 +24,7 @@ from tkinter import filedialog
 import tkinter as tk
 
 licencias = dict()
-licencias['gplv3'] = """    delexif.py  Copyright (C) 2023  Cristian Tocci
+licencias['gplv3'] = """    delexif-gui.py  Copyright (C) 2023  Cristian Tocci
     This program comes with ABSOLUTELY NO WARRANTY; for details press 'w'.
     This is free software, and you are welcome to redistribute it
     under certain conditions; See COPYING.odt file for further details.
@@ -210,7 +210,7 @@ def ayuda(ventana_principal):
 def muestra_ventana():
     v = tk.Tk()
     v.geometry("600x400")
-    v.title("DELEXIF")
+    v.title("DELEXIF-GUI")
 
     #       DEFINICIONES
     l_ayuda=tk.Label(v, text="F1 - ayuda")
