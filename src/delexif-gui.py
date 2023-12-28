@@ -24,7 +24,7 @@ from tkinter import filedialog
 import tkinter as tk
 
 licencias = dict()
-licencias['gplv3'] = """    noexif.py  Copyright (C) 2023  Cristian Tocci
+licencias['gplv3'] = """    delexif.py  Copyright (C) 2023  Cristian Tocci
     This program comes with ABSOLUTELY NO WARRANTY; for details press 'w'.
     This is free software, and you are welcome to redistribute it
     under certain conditions; See COPYING.odt file for further details.
@@ -210,7 +210,7 @@ def ayuda(ventana_principal):
 def muestra_ventana():
     v = tk.Tk()
     v.geometry("600x400")
-    v.title("NO-EXIF")
+    v.title("DELEXIF")
 
     #       DEFINICIONES
     l_ayuda=tk.Label(v, text="F1 - ayuda")
@@ -233,7 +233,7 @@ def muestra_ventana():
     f_abajo=tk.Frame(v)
     logbox=tk.Text(f_abajo, height=4, width=50, font=("System",8), state="disabled")
     sb_logbox=tk.Scrollbar(f_abajo)
-    b_noexif=tk.Button(text="NO-EXIF!", command=lambda: quita_exif(e_origen,e_destino, logbox))
+    b_delexif=tk.Button(text="DEL-EXIF!", command=lambda: quita_exif(e_origen,e_destino, logbox))
 
     #       PACKS
     l_ayuda.pack   (side=tk.TOP, pady=(5,5), padx=(10,10), anchor=tk.W)
@@ -256,7 +256,7 @@ def muestra_ventana():
     logbox.config  (yscrollcommand=sb_logbox.set)
     sb_logbox.config (command=logbox.yview)
 
-    b_noexif.pack(side=tk.RIGHT, pady=(10,20), padx=(10,20))
+    b_delexif.pack(side=tk.RIGHT, pady=(10,20), padx=(10,20))
 
 
     #####################################################################################
